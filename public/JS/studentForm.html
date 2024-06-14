@@ -1,0 +1,77 @@
+<h1 ><center>Student Form</center></h1>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <td id="input-top"><input type="text"></td>
+        </tr>
+
+        <tr>
+            <th>Age</th>
+            <td><input type="number"></td>
+        </tr>
+
+        <tr>
+            <th>Gender</th>
+            <td><input type="radio" name="gender">Male</td>
+            <td><input type="radio" name="gender">Female</td>
+           
+        </tr>
+
+        <tr>
+            <th>Course</th>
+            <td>
+                <select>
+                    <option value="">js</option>
+                    <option value="">html</option>
+                    <option value="">css</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th>Email</th>
+            <td><input type="email"></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="saved()">save</button></td>
+        </tr>
+
+        
+
+    </thead>
+    
+
+</table>
+
+
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Course</th>
+        <th>Email</th>
+    </thead>
+    <tbody>
+        <div >
+            <td></td>
+
+        </div>
+        
+    </tbody>
+</table>
+
+<script>
+    var box1=document.getElementById("input-top");
+    var box2=document.getElementById("input-bottom");
+
+    function saved(){
+        var div=document.createElement("div");
+
+        div.textContent=box1.value;
+
+    }
+
+</script>

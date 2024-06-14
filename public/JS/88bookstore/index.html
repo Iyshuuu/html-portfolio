@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>88bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>88bookstore</h1>
+    </div>
+    <div class="container">
+        <div class="maindivv">
+
+            <h3 id="h1">Rich Dad Poor Dad</h3>
+            <h5 id="head">Robert</h5>
+            <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor iusto nemo, quidem veniam voluptas quaerat sunt molestias illum sit impedit excepturi, alias animi expedita dolore praesentium, odit pariatur. Quidem, provident.</p>
+            <button id="btn" onclick="deleteBook(event)">Delete</button>
+        </div>
+
+    </div>
+   
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input" /><br>
+            <input type="text" placeholder="Book Author" id="book-author-input" /><br>
+            <textarea placeholder="Short Description" id="book-description"></textarea><br>
+            <button id="add-book">Add</button>
+            <button id="cancel-popup" >Cancel</button>
+        </form>
+
+    </div>
+    <button class="add-btn" id="add-popup-btn" onclick="def(event)">+</button>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>

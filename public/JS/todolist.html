@@ -1,0 +1,27 @@
+<input type="text" id="input">
+<button onclick="update()">Add</button>
+<ul id="unorder">
+    <li>Hello
+        <button onclick="deleted(event)">Delete</button>
+      
+    </li>
+</ul>
+<script>
+    var para=document.getElementById("para");
+    var box=document.getElementById("input");
+    var unordered=document.getElementById("unorder")
+
+    function update(){
+        var list=document.createElement("li");
+
+        list.innerHTML=box.value + "<button onclick='deleted(event)'>Delete</button>";
+        unordered.append(list)
+
+
+    }
+
+    function deleted(event){
+        event.target.parentElement.remove();
+    }
+
+</script>

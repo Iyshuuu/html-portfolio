@@ -1,0 +1,26 @@
+<style>
+    #main{
+        height:200px;
+        width:200px;
+        border:1px solid black;
+    }
+</style>
+
+<body>
+    <div id="main"></div>
+
+    <button onclick="change('red')" id="btn1">red</button>
+    <button onclick="change('blue')">blue</button>
+    <button onclick="change('green')">green</button>
+    <button onclick="change('black')">black</button>
+
+</body>
+
+
+<script>
+     
+    function change(val){
+        document.getElementById("main").style.backgroundColor=val;
+    }
+</script>    
+

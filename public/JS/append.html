@@ -1,0 +1,15 @@
+<button onclick="change()">Add Hello</button>
+<div id="result"></div>
+
+
+<script>
+    
+
+    var resultbox=document.getElementById("result")
+    function change(){
+        var ele=document.createElement("h1");
+        ele.textContent="hello";
+        resultbox.append(ele)
+
+    }
+</script>

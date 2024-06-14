@@ -1,0 +1,16 @@
+<h1 id="h1">Click button</h1>
+
+<button id="btn1" onclick="change1(event)">John</button>
+<button id="btn2" onclick="change1(event)">Raj</button>
+<button id="btn3" onclick="change1(event)">praveen</button>
+
+<script>
+    var h1=document.getElementById("h1");
+    var res1=document.getElementById("btn1");
+    var res2=document.getElementById("btn2");
+    var res3=document.getElementById("btn3");
+    function change1(event){
+        h1.textContent=event.target.textContent;
+
+    }
+</script>

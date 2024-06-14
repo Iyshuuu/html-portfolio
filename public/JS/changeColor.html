@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Color</title>
+    <style>
+        div{
+            width:400px;
+            height:400px;
+            background-color :cornflowerblue;
+            transition: 4s;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <button onclick="change()">change the color</button>
+
+    <script>
+
+        var box=document.getElementById("box");
+
+        function change(){
+            box.style.backgroundColor="pink";
+        }
+
+    </script>
+  
+</body>
+</html>
